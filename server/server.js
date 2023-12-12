@@ -7,11 +7,13 @@
     "editor.defaultFormatter"; "esbenp.prettier-vscode"
   }
 
+  // Steg 1 och 2
+
   const express = require('express'); 
   const server = express(); 
-  const PORT = 3000; 
   
- 
+  
+  // Steg 3
   server
     .use(express.json()) 
     .use(express.urlencoded({ extended: false })) 
@@ -22,14 +24,19 @@
       next();
     });
   
- 
-  server.get('/users', (req, res) => {
-   
-  });
-  
+ // Steg 4
 
-  server.listen(PORT, () => {
-    console.log(`Jamming to https://localhost:${PORT}`);
-    
-  });
-  
+ const PORT = 3000;
+ server.listen(PORT, () => {
+  console.log(`Jamming to https://localhost:${PORT}`);
+});
+
+// Steg 5
+
+server.get('/',(req,res)=>{
+  res.send('hello there');
+});
+
+server.get('/users', (req,res) => {
+
+});
