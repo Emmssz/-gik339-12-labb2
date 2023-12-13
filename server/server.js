@@ -40,3 +40,9 @@ server.get('/',(req,res)=>{
 server.get('/users', (req,res) => {
 
 });
+
+
+// Uppgift 3  - använd sqlite3
+
+const sqlite3 = require ('sqlite3').verbose()
+
