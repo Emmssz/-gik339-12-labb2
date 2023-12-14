@@ -52,7 +52,8 @@ const sqlite3 = require ('sqlite3').verbose()
 //deklarerar variabeln db och kopplar den till filen med databasen
 const db = new sqlite3.Database('./gik339-labb2.db');
 const sql = 'SELECT * FROM users';
-
+//Uppgift 3 - steg 2
+// Funktion för att kunna fråga SWL
 db.all(sql, (err, rows)=> {
   if(err) {
     console.log(err);
