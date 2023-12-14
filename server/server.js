@@ -45,7 +45,7 @@ server.get('/users', (req,res) => {
   const db = new sqlite3.Database('./gik339-labb2.db');
   const sql = 'SELECT * FROM users';
   //Uppgift 3 - steg 2, 3 och 4
-  // Funktion för att kunna fråga SQL + felmeddelande
+  // funktion för att kunna fråga SQL + felmeddelande
   db.all(sql, (err, rows)=> {
     if(err) {
       res.status(500).send(err);
