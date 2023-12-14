@@ -56,8 +56,8 @@ const sql = 'SELECT * FROM users';
 // Funktion för att kunna fråga SQL
 db.all(sql, (err, rows)=> {
   if(err) {
-    console.log(err);
+    res.status(500).send(err);
   } else {
-    console.log(rows);
+    res.send(rows);
   }
 });
