@@ -53,7 +53,7 @@ const sqlite3 = require ('sqlite3').verbose()
 const db = new sqlite3.Database('./gik339-labb2.db');
 const sql = 'SELECT * FROM users';
 //Uppgift 3 - steg 2
-// Funktion för att kunna fråga SWL
+// Funktion för att kunna fråga SQL
 db.all(sql, (err, rows)=> {
   if(err) {
     console.log(err);
