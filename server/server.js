@@ -7,13 +7,14 @@
     "editor.defaultFormatter"; "esbenp.prettier-vscode"
   }
 
-  // Steg 1 och 2
-
+  // Uppgift 2 - Steg 1 och 2
+  //importerar npm paketet express via variabeln express 
   const express = require('express'); 
+  //deklarerar en variabel för serverobjektet
   const server = express(); 
   
   
-  // Steg 3
+  // Uppgift 2 - Steg 3 (importerat från uppgiftsbeskrivningen)
   server
     .use(express.json()) 
     .use(express.urlencoded({ extended: false })) 
@@ -24,16 +25,17 @@
       next();
     });
   
- // Steg 4
+ // Uppgift 2 - Steg 4
 
+ //tilldelar variabeln PORT värdet 3 000
  const PORT = 3000;
+ //använder listen för att 
  server.listen(PORT, () => {
   console.log(`Jamming to https://localhost:${PORT}`);
 });
 
-// Steg 5
-
-server.get('/',(req,res)=>{
+// Uppgift 2 - Steg 5
+server.get('/',(req, res)=>{
   res.send('hello there');
 });
 
@@ -42,7 +44,10 @@ server.get('/users', (req,res) => {
 });
 
 
-// Uppgift 3  - använd sqlite3
-
+// Uppgift 3
+//importerar npm paketet sqlite3 via variabeln sqlite3
 const sqlite3 = require ('sqlite3').verbose()
 
+// Upggift 3 - Steg 1
+//deklarerar variabeln db och kopplar den till filen med databasen
+const db = new sqlite3.Database('./gik339-labb2.db');
