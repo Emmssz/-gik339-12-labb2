@@ -52,8 +52,8 @@ const sqlite3 = require ('sqlite3').verbose()
 //deklarerar variabeln db och kopplar den till filen med databasen
 const db = new sqlite3.Database('./gik339-labb2.db');
 const sql = 'SELECT * FROM users';
-//Uppgift 3 - steg 2
-// Funktion för att kunna fråga SQL
+//Uppgift 3 - steg 2, 3 och 4
+// Funktion för att kunna fråga SQL + felmeddelande
 db.all(sql, (err, rows)=> {
   if(err) {
     res.status(500).send(err);
@@ -61,3 +61,8 @@ db.all(sql, (err, rows)=> {
     res.send(rows);
   }
 });
+
+//Uppgift 4 Testa backend
+
+
+
