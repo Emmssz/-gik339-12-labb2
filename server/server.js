@@ -51,3 +51,12 @@ const sqlite3 = require ('sqlite3').verbose()
 // Upggift 3 - Steg 1
 //deklarerar variabeln db och kopplar den till filen med databasen
 const db = new sqlite3.Database('./gik339-labb2.db');
+const sql = 'SELECT * FROM users';
+
+db.all(sql, (err, rows)=> {
+  if(err) {
+    console.log(err);
+  } else {
+    console.log(rows);
+  }
+});
