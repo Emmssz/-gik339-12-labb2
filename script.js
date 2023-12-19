@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     //Uppgift 7 - Steg 1
     // skapar "divbox" i html
-    const userListUl = document.createElement('divBox');
+    var divBox = document.createElement('div');
     
     //Uppgift 6 - Steg 1 och 2
     // använder fetch för att hämta data från servern
@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
             //lägger till det i html
             divBox.insertAdjacentHTML('beforeend', element);
         });
+        //placerar div:en på rätt ställe
+        var placeDiv = document.getElementById('infoSection');
+        placeDiv.appendChild(divBox);
       })
       //fångar upp fel och skriver ut det i konsolen
       .catch(error => console.error("Error fetching data:", error));
