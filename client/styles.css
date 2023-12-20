@@ -3,6 +3,7 @@
     --light-grey: rgb(211, 211, 211);
     --rose-gold: rgb(200, 159, 147);
     --beige: rgb(245, 237, 235);
+    --white:hsl(0, 0%, 97%);
 }
 
 *{
@@ -86,6 +87,7 @@ main{
     float: left;
     border-radius: 15px;
     height: 100%;
+    background-color:var(--white);
 }
 
 .list__info{
