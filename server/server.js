@@ -61,4 +61,4 @@ server.get('/users', (req,res) => {
 const sqlite3 = require ('sqlite3').verbose()
 
 //Uppgift 4 Testa backend
-//Status: Utfört
+//Status: Genomfört

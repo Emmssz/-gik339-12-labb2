@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li class="list__info color">Color: ${user.color}</li>
                 </ul>`;
             //Uppgift 7 - Steg 4
-            //lägger till det i html
+            //lägger till koden ovan i html
             divBox.insertAdjacentHTML('beforeend', element);
         });
-        //placerar div:en på rätt ställe
+        //placerar div:en på rätt ställe på sidan (i infoSection)
         var placeDiv = document.getElementById('infoSection');
         placeDiv.appendChild(divBox);
       })
