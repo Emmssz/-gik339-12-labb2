@@ -1,8 +1,8 @@
 :root{
     --black: rgb(80, 80, 80);
+    --light-grey: rgb(211, 211, 211);
     --rose-gold: rgb(200, 159, 147);
     --beige: rgb(245, 237, 235);
-    --light-grey: rgb(211, 211, 211);
 }
 
 *{
