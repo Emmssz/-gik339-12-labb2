@@ -2,6 +2,7 @@
     --black: rgb(80, 80, 80);
     --rose-gold: rgb(200, 159, 147);
     --beige: rgb(245, 237, 235);
+    --light-grey: rgb(211, 211, 211);
 }
 
 *{
@@ -66,12 +67,11 @@ main{
     list-style: none;
     padding: 2%;
     border-radius: 15px;
-    background-color: rgb(235, 235, 235);
     transition: .5s;
 }
 
 .list:hover{
-    background-color: rgb(211, 211, 211);
+    background-color: var(--light-grey);
     transition: .5s;
 }
 
@@ -79,7 +79,6 @@ main{
     box-sizing: border-box;
     width: 30%;
     float: left;
-    background-color: #c8a195;
     border-radius: 15px;
     height: 100%;
 }
@@ -94,7 +93,6 @@ main{
 .list__info.id{
     width: 35%;
     float: left;
-    color: ;
 }
 .list__info.color{
     width: 35%;
