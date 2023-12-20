@@ -104,3 +104,13 @@ main{
     width: 35%;
     float: left;
 }
+
+.fa-user{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 200%;
+    padding-top: 35%;
+}

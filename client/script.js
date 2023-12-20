@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             //Uppgift 7 - Steg 3
             // lägger till info för li-elementen
             let element = `<ul class="list">
-                <div class="list__profile" style="background-color:${user.color}"></div>
+                <div class="list__profile"><i class="fa fa-solid fa-user fa-5x" style="color: ${user.color}"></i></div>
                 <li class="list__info name">Name: ${user.firstName} ${user.lastName}</li>
                 <li class="list__info username">Username: ${user.username}</li>
                 <li class="list__info id">ID: ${user.id}</li>
